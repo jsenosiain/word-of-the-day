@@ -1,22 +1,22 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, expect, describe, it, vi } from 'vitest'
-import { MyButton } from '.'
+import { Button } from '.'
 
-describe('MyButton test:', () => {
+describe('Button test:', () => {
   afterEach(cleanup)
 
   it('should render component', () => {
-    render(<MyButton label='Testing' />)
+    render(<Button label='Testing' />)
   })
 
   it('should render label', () => {
-    render(<MyButton label='Testing' />)
+    render(<Button label='Testing' />)
     screen.getByText('Testing')
   })
 
   it('should be disabled', () => {
     render(
-      <MyButton
+      <Button
         label='Testing'
         disabled
       />
@@ -27,7 +27,7 @@ describe('MyButton test:', () => {
   it('onClick triggers properly', async () => {
     const mockFn = vi.fn()
     render(
-      <MyButton
+      <Button
         onClick={mockFn}
         label='Testing'
       />
@@ -40,7 +40,7 @@ describe('MyButton test:', () => {
   it('disabled prevents action', async () => {
     const mockFn = vi.fn()
     render(
-      <MyButton
+      <Button
         onClick={mockFn}
         label='Testing'
         disabled

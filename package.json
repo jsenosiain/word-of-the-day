@@ -5,9 +5,9 @@
 
   "type": "module",
   "files": ["dist"],
-  "exports": "./dist/main.js",
-  "modules": ".dist/main.js",
-  "types": "./dist/main.d.ts",
+  "exports": "./dist/index.js",
+  "modules": "./dist/index.js",
+  "types": "./dist/index.d.ts",
 
   "scripts": {    
     "format": "prettier --check .",
