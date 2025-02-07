@@ -5,9 +5,9 @@
 
   "type": "module",
   "files": ["dist"],
-  "exports": "./dist/index.js",
-  "modules": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "exports": "./dist/main.js",
+  "modules": "./dist/main.js",
+  "types": "./dist/main.d.ts",
 
   "scripts": {    
     "format": "prettier --check .",
@@ -21,7 +21,8 @@
     "test": "vitest --ui",
     "coverage": "vitest run --coverage",
     "build": "tsc -b && vite build",
-    "prepublishOnly": "vitest run && npm run build"
+    "prepublishOnly": "vitest run && npm run build",
+    "relink": "rm -rf ./dist && npm run build && cd dist && npm link && cd .."
   },
   "dependencies": {
     "react": "^19.0.0",

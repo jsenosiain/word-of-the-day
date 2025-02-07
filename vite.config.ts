@@ -14,7 +14,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
-      input: "src/Button/index.tsx",
+      input: "src/main.ts",
       output: {
         entryFileNames: "[name].js",
         assetFileNames: "assets/[name][extname]",

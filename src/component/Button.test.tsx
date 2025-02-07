@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, expect, describe, it, vi } from 'vitest'
-import { Button } from '.'
+import { Button } from './Button'
 
 describe('Button test:', () => {
   afterEach(cleanup)
