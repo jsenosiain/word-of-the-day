@@ -2,14 +2,14 @@
   "name": "word-of-the-day",
   "private": false,
   "version": "0.0.1",
-
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": "./dist/main.js",
   "modules": "./dist/main.js",
   "types": "./dist/main.d.ts",
-
-  "scripts": {    
+  "scripts": {
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "stylelint": "stylelint **/*.css",
@@ -55,6 +55,7 @@
     "jsdom": "^26.0.0",
     "prettier": "^3.4.2",
     "storybook": "^8.5.3",
+    "storybook-css-modules": "^1.0.8",
     "stylelint": "^16.14.1",
     "stylelint-config-standard": "^37.0.0",
     "typescript": "~5.7.2",

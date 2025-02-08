@@ -1,1 +1,1 @@
-export { Button } from './component/Button'
+export { WordOfTheDay } from "./WordOfTheDay";
