@@ -5,9 +5,7 @@ import { WordOfTheDay } from './WordOfTheDay'
 const meta = {
   title: 'WordOfTheDay',
   component: WordOfTheDay,
-  parameters: {
-    layout: 'centered',
-  },
+  parameters: {},
   tags: ['autodocs'],
   args: {},
 } satisfies Meta<typeof WordOfTheDay>

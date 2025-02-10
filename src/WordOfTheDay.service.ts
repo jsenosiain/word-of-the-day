@@ -25,10 +25,10 @@ export interface Phonetic {
 
 export interface Dictionary {
 	license: License,
-	meaning: Meaning[],
+	meanings: Meaning[],
 	phonetic?: string;
 	phonetics: Phonetic[];
-	sourceUrl: string[];
+	sourceUrls: string[];
 	word: string;
 }
 
