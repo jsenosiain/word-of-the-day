@@ -1,7 +1,7 @@
 {
   "name": "word-of-the-day",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
