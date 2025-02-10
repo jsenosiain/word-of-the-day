@@ -1,17 +1,16 @@
-//import { cleanup, fireEvent, render, screen } from '@testing-library/react'
-//import { afterEach, expect, describe, it, vi } from 'vitest'
-//import { WordOfTheDay } from './WordOfTheDay'
+import { cleanup, render } from '@testing-library/react'
+import { afterEach, describe, it } from 'vitest'
+import { WordOfTheDay } from './WordOfTheDay'
 
-import { describe } from 'vitest'
 
 describe('WordOfTheDay test:', () => {
-  /*
   afterEach(cleanup)
 
   it('should render component', () => {
     render(<WordOfTheDay />)
   })
 
+  /*
   it('should render label', () => {
     render(<WordOfTheDay />)
     screen.getByText('Testing')
